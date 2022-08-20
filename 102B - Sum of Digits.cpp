@@ -6,7 +6,7 @@ int main()
     char digits[100001];
     scanf("%s", digits);
 
-    int times(0);
+    int time(0);
     if (digits[1] != 0)
     {
         int digitsum(0);
@@ -16,7 +16,7 @@ int main()
             digitsum += (*p - '0');
             ++p;
         }
-        ++times;
+        ++time;
 
         while (digitsum > 9)
         {
@@ -27,9 +27,9 @@ int main()
                 digitsum += m % 10;
                 m /= 10;
             }
-            ++times;
+            ++time;
         }
     }
-    printf("%d\n", times);
+    printf("%d\n", time);
     return 0;
 }
